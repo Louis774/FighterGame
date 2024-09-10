@@ -9,6 +9,6 @@ class Fighter:
 
     def attack(self, attacking):
         dmg = 3 + self.Strength
-        print("Gemma attacks {0} and deals {1} damage!".format(attacking.Name, dmg))
+        print("{0} attacks {1} and deals {2} damage!".format(self.Name, attacking.Name, dmg))
 
         attacking.Health -= dmg
